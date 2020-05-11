@@ -1,0 +1,30 @@
+{
+  "name": "vue-learn-share",
+  "version": "1.0.0",
+  "description": "vue learn share",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llccing/vue-learn-share.git"
+  },
+  "keywords": [
+    "vue",
+    "learn",
+    "share"
+  ],
+  "author": "llccing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llccing/vue-learn-share/issues"
+  },
+  "homepage": "https://github.com/llccing/vue-learn-share#readme",
+  "devDependencies": {
+    "markdown-it-task-lists": "^2.1.1",
+    "moment": "^2.25.3",
+    "vuepress": "^1.4.1"
+  }
+}

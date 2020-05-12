@@ -9,6 +9,10 @@ module.exports = {
       {
         text: 'Vue CLI',
         link: '/vue-cli/'
+      },
+      {
+        text: 'About',
+        link: 'https://llccing.github.io/FrontEnd/about/'
       }
     ],
     sidebar: {

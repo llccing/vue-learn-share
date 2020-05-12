@@ -1,12 +1,12 @@
-# vue invoke <plugin> [pluginOptions]
+# vue invoke plugin [pluginOptions]
 
-上一篇我们介绍了 `vue add <plugin>` 命令，这次的 `vue invoke` 其实做的事就是在已经安装了插件的基础上再次执行插件中定义的方法。
+上一篇我们介绍了 `vue add plugin` 命令，这次的 `vue invoke` 其实做的事就是在已经安装了插件的基础上再次执行插件中定义的方法。
 
 ## 源码探索
 
 ```js
 program
-  .command('invoke <plugin> [pluginOptions]')
+  .command('invoke plugin [pluginOptions]')
   .description('invoke the generator of a plugin in an already created project')
   .option('--registry <url>', 'Use specified npm registry when installing dependencies (only for npm)')
   .allowUnknownOption()

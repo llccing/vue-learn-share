@@ -1,6 +1,6 @@
-# vue create <app-name>
+# vue create app-name
 
-首先我们看第一个命令，`vue create <app-name>`，用来创建项目的命令。
+首先我们看第一个命令，`vue create app-name`，用来创建项目的命令。
 
 ### `@vue/cli/bin/vue.js`
 
@@ -43,11 +43,11 @@
 ```
 可以看到这里面的信息丰富。
 
-2. 通过 commander 注册命令，第一个是 `vue create <app-name>` 命令，<app-name> 表示传入的参数名。
+2. 通过 commander 注册命令，第一个是 `vue create app-name` 命令，app-name 表示传入的参数名。
 
 ```js
 program
-  .command('create <app-name>')
+  .command('create app-name')
   .description('create a new project powered by vue-cli-service')
   .option('-p, --preset <presetName>', 'Skip prompts and use saved or remote preset')
   .option('-d, --default', 'Skip prompts and use default preset')

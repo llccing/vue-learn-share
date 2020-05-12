@@ -1,13 +1,13 @@
-# vue add <plugin> [pluginOptions]
+# vue add plugin [pluginOptions]
 
-上一节，我们完成了 `vue create <app-name>` 命令的探索，接下来我们看 `vue add <plugin> [pluginOptions]` 命令。
+上一节，我们完成了 `vue create <app-name>` 命令的探索，接下来我们看 `vue add plugin [pluginOptions]` 命令。
 
 ## 源码探索
 
 add 命令的注册从下面的代码开始
 ```js
 program
-  .command('add <plugin> [pluginOptions]')
+  .command('add plugin [pluginOptions]')
   .description('install a plugin and invoke its generator in an already created project')
   .option('--registry <url>', 'Use specified npm registry when installing dependencies (only for npm)')
   // 这个表示未定的选项，也能够被解析。这样就给自定义插件提供了自由发挥的空间
@@ -23,7 +23,7 @@ program
     require('../lib/add')(plugin, minimist(process.argv.slice(3)))
   })
 ```
-可以看到，add 命令需要一个 `<plugin>` 参数，插件的配置 `[pluginOptions]` 是可选项。这里我们 debug 一下，在 action 的回调中打印下参数的结构。通过图中的注释，可以看见参数都已经被解析成功了。
+可以看到，add 命令需要一个 `plugin` 参数，插件的配置 `[pluginOptions]` 是可选项。这里我们 debug 一下，在 action 的回调中打印下参数的结构。通过图中的注释，可以看见参数都已经被解析成功了。
 
 ### @vue/cli/lib/add.js
 

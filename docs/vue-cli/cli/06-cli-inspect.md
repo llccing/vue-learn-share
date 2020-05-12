@@ -24,9 +24,9 @@ program
 
 ### 参数解析
 
-- **--mode <mode>**，打印测试或者正式环境下的 webpack 配置，例如：`vue inspect --mode development` 或者 `vue inspect --mode production`。
-- **--rule <ruleName>**，打印某个模块的规则，例如：`vue inspect --rule stylus`。
-- **--plugin <pluginName>**，打印某个插件的配置，例如：`vue inspect --plugin transform-modules`。
+- **--mode mode**，打印测试或者正式环境下的 webpack 配置，例如：`vue inspect --mode development` 或者 `vue inspect --mode production`。
+- **--rule ruleName**，打印某个模块的规则，例如：`vue inspect --rule stylus`。
+- **--plugin pluginName**，打印某个插件的配置，例如：`vue inspect --plugin transform-modules`。
 - **--rules**，打印所有的规则的名字列表
 - **--plugins**，打印所有插件的名字列表
 - **-v --verbose**，展示全部的配置

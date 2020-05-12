@@ -1,4 +1,4 @@
-# vue init <template> <app-name>
+# vue init template app-name
 
 todo，暂时忽略该命令。一个是因为调试过程中出现报错，第二个是根据我的理解，以后该命令会被废弃。
 
